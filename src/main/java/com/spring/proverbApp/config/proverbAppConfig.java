@@ -1,5 +1,6 @@
 package com.spring.proverbApp.config;
 
+import com.spring.proverbApp.service.proverbAppService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -22,5 +23,10 @@ public class proverbAppConfig {
         viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
         return viewResolver;
+    }
+
+    @Bean
+    public proverbAppService proverbAppService(){
+        return proverbAppService();
     }
 }

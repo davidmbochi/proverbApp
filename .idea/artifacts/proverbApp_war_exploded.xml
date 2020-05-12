@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="proverbApp:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/proverbApp_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>proverbApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -44,7 +51,11 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="proverbApp/web/Web" />
     </root>

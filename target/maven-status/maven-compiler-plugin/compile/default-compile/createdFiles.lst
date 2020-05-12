@@ -1,0 +1,4 @@
+com\spring\proverbApp\testDB\testPostgreDB.class
+com\spring\proverbApp\config\proverbAppConfig.class
+com\spring\proverbApp\config\proverbAppConfigDispatcherServletInitializer.class
+com\spring\proverbApp\controller\proverbAppController.class
