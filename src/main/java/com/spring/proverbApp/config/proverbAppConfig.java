@@ -1,5 +1,6 @@
 package com.spring.proverbApp.config;
 
+import com.spring.proverbApp.Dao.proverbAppDao;
 import com.spring.proverbApp.service.proverbAppService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -28,5 +29,10 @@ public class proverbAppConfig {
     @Bean
     public proverbAppService proverbAppService(){
         return proverbAppService();
+    }
+    
+    @Bean
+    public proverbAppDao proverbAppDao(){
+        return proverbAppDao();
     }
 }
