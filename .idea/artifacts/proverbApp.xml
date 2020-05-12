@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="proverbApp">
+    <output-path>$PROJECT_DIR$/out/artifacts/proverbApp</output-path>
+    <root id="archive" name="proverbApp.jar" />
+  </artifact>
+</component>
