@@ -4,6 +4,7 @@ import com.spring.proverbApp.Dao.proverbAppDao;
 import com.spring.proverbApp.entity.Proverbs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class proverbAppServiceImplementation implements proverbAppService {
@@ -11,6 +12,7 @@ public class proverbAppServiceImplementation implements proverbAppService {
     private proverbAppDao proverbAppDao;
 
     @Override
+    @Transactional
     public void saveProverb(Proverbs theproverb) {
 
         proverbAppDao.saveProverb(theproverb);
