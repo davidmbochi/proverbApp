@@ -15,6 +15,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.sql.DataSource;
+import java.beans.PropertyVetoException;
 
 @Configuration
 @EnableWebMvc
@@ -47,6 +48,17 @@ public class proverbAppConfig {
     @Bean
     public DataSource proverbAppDataSource(){
         ComboPooledDataSource comboPooledDataSource= new ComboPooledDataSource();
+        try {
+            comboPooledDataSource.setDriverClass(environment.getProperty("jdbc.driver"));
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        }
+        comboPooledDataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
+        comboPooledDataSource.setUser(environment.getProperty("jdbc.user"));
+        comboPooledDataSource.setPassword(environment.getProperty("jdbc.password"));
+
+
+        return comboPooledDataSource;
     }
 
 }
