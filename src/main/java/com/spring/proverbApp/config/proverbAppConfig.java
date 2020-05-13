@@ -16,6 +16,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.util.Properties;
 
 @Configuration
 @EnableWebMvc
@@ -57,8 +58,29 @@ public class proverbAppConfig {
         comboPooledDataSource.setUser(environment.getProperty("jdbc.user"));
         comboPooledDataSource.setPassword(environment.getProperty("jdbc.password"));
 
+        comboPooledDataSource.setInitialPoolSize(getIntProperty("Connection.pool.initialPoolSize"));
+        comboPooledDataSource.setMinPoolSize(getIntProperty("Connection.pool.minPoolSize"));
+        comboPooledDataSource.setMaxPoolSize(getIntProperty("Connection.pool.maxPoolSize"));
+        comboPooledDataSource.setMaxIdleTime(getIntProperty("Connection.pool.maxIdleTime"));
+
 
         return comboPooledDataSource;
+    }
+
+    private int getIntProperty(String propName){
+        int intPropVal= Integer.parseInt((propName));
+
+        return intPropVal;
+    }
+
+    private Properties getHibernateProperties(){
+        Properties properties =new Properties();
+
+        properties.setProperty("hibernate.dialect",environment.getProperty("hibernate.dialect"));
+
+        properties.setProperty("hibernate.show_sql",environment.getProperty("hibernate.show_sql"));
+
+        return properties;
     }
 
 }
