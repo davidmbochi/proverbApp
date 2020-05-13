@@ -61,10 +61,10 @@ public class proverbAppConfig {
         comboPooledDataSource.setUser(environment.getProperty("jdbc.user"));
         comboPooledDataSource.setPassword(environment.getProperty("jdbc.password"));
 
-        comboPooledDataSource.setInitialPoolSize(getIntProperty("Connection.pool.initialPoolSize"));
-        comboPooledDataSource.setMinPoolSize(getIntProperty("Connection.pool.minPoolSize"));
-        comboPooledDataSource.setMaxPoolSize(getIntProperty("Connection.pool.maxPoolSize"));
-        comboPooledDataSource.setMaxIdleTime(getIntProperty("Connection.pool.maxIdleTime"));
+        comboPooledDataSource.setInitialPoolSize(getIntProperty("connection.pool.initialPoolSize"));
+        comboPooledDataSource.setMinPoolSize(getIntProperty("connection.pool.minPoolSize"));
+        comboPooledDataSource.setMaxPoolSize(getIntProperty("connection.pool.maxPoolSize"));
+        comboPooledDataSource.setMaxIdleTime(getIntProperty("connection.pool.maxIdleTime"));
 
 
         return comboPooledDataSource;
