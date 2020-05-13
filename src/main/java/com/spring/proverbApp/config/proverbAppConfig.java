@@ -1,5 +1,6 @@
 package com.spring.proverbApp.config;
 
+import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.spring.proverbApp.Dao.proverbAppDao;
 import com.spring.proverbApp.service.proverbAppService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +46,7 @@ public class proverbAppConfig {
 
     @Bean
     public DataSource proverbAppDataSource(){
-        return null;
+        ComboPooledDataSource comboPooledDataSource= new ComboPooledDataSource();
     }
 
 }
