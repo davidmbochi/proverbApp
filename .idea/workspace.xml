@@ -7,20 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58972d93-cc0c-4cef-85ab-38c13cb1ba27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homepage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/persistence-postgre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/persistence-postgre.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/config/proverbAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/config/proverbAppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/controller/proverbAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/controller/proverbAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/persistence-postgre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/persistence-postgre.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT/WEB-INF/classes/com/spring/proverbApp/config/proverbAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT/WEB-INF/classes/com/spring/proverbApp/config/proverbAppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT/WEB-INF/classes/com/spring/proverbApp/controller/proverbAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT/WEB-INF/classes/com/spring/proverbApp/controller/proverbAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT/WEB-INF/classes/persistence-postgre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/proverbApp-1.0-SNAPSHOT/WEB-INF/classes/persistence-postgre.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
+            <state relative-caret-position="236">
               <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
             </state>
           </provider>
@@ -126,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-postgre.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="1" column="80" selection-start-line="1" selection-start-column="80" selection-end-line="1" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -163,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/persistence-postgre.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/persistence-postgre.properties" />
       </list>
     </option>
   </component>
@@ -610,18 +597,18 @@
       <workItem from="1589295674903" duration="4483000" />
       <workItem from="1589306238350" duration="2094000" />
       <workItem from="1589339885360" duration="6605000" />
-      <workItem from="1589358096564" duration="3826000" />
+      <workItem from="1589358096564" duration="4588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29852000" />
+    <option name="totallyTimeSpent" value="30614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26427525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26427525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -631,7 +618,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17535545" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.54028434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -740,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -787,10 +767,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-postgre.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="1" column="80" selection-start-line="1" selection-start-column="80" selection-end-line="1" selection-end-column="80" />
         </state>
       </provider>
     </entry>

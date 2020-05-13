@@ -25,7 +25,7 @@ import java.util.Properties;
 @EnableWebMvc
 @EnableTransactionManagement
 @ComponentScan(basePackages = "com.spring.proverbApp")
-@PropertySource("classpath:persistence-postgre.properties")
+@PropertySource("classpath:persistence-postgresql.properties")
 public class proverbAppConfig {
 
     @Autowired
