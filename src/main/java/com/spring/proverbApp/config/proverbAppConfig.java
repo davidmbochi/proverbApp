@@ -3,12 +3,14 @@ package com.spring.proverbApp.config;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.spring.proverbApp.Dao.proverbAppDao;
 import com.spring.proverbApp.service.proverbAppService;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
@@ -94,6 +96,12 @@ public class proverbAppConfig {
         return sessionFactory;
     }
 
-    
+    @Bean
+    @Autowired
+    public HibernateTransactionManager transactionManager(SessionFactory sessionFactory){
+        HibernateTransactionManager hibernateTransactionManager= new HibernateTransactionManager();
+        hibernateTransactionManager.setSessionFactory(sessionFactory);
+        return hibernateTransactionManager;
+    }
 
 }
