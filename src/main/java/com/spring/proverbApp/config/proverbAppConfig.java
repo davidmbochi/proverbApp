@@ -25,7 +25,7 @@ import java.util.Properties;
 @EnableWebMvc
 @EnableTransactionManagement
 @ComponentScan(basePackages = "com.spring.proverbApp")
-@PropertySource("classpath:persistence-postgresql.properties")
+@PropertySource(value = "classpath:persistence-postgresql.properties")
 public class proverbAppConfig {
 
     @Autowired
@@ -37,16 +37,6 @@ public class proverbAppConfig {
         viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
         return viewResolver;
-    }
-
-    @Bean
-    public proverbAppService proverbAppService(){
-        return proverbAppService();
-    }
-
-    @Bean
-    public proverbAppDao proverbAppDao(){
-        return proverbAppDao();
     }
 
     @Bean
