@@ -20,7 +20,11 @@ public class proverbAppController {
         return "homepage";
     }
     @GetMapping("/showProverbForm")
-    public String showProverbForm(){
+    public String showProverbForm(Model model){
+        Proverbs proverbs = new Proverbs();
+
+        model.addAttribute("theproverb",proverbs);
+
         return "proverbForm";
     }
 

@@ -20,19 +20,25 @@
 
 </head>
 <body>
-<form:form action="saveProverb" modelAttribute="theproverb" method="POST">
-    Author: <form:input path="author"/>
+   <div class="container">
+       <div class="row">
+           <form:form action="saveProverb" modelAttribute="theproverb" method="POST">
+               Author: <form:input path="author"/>
 
-    <br>
-    Proverb: <form:textarea path="proverb"/>
+               <br>
+               Proverb: <form:textarea path="proverb"/>
 
-    <br>
-    proverbDetail: <form:textarea path="proverbDetail"/>
+               <br>
+               proverbDetail: <form:textarea path="proverbDetail"/>
 
-    <br>
-    <input type="submit" value="Submit">
+               <br>
+               <input type="submit" value="Submit">
 
-</form:form>
+           </form:form>
+
+       </div>
+
+   </div>
 
 </body>
 </html>

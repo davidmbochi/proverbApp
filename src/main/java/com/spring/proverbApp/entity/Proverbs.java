@@ -1,7 +1,5 @@
 package com.spring.proverbApp.entity;
 
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
