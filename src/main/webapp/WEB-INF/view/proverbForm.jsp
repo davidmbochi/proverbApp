@@ -5,26 +5,40 @@
   Time: 7:25 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+
 <html>
 <head>
     <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 <body>
-<form:form action="${pageContext.request.contextPath}/saveProverb" method="post" modelAttribute="proverbs">
-    Author: <form:input path="author"/>
-    <form:errors path="author"/>
-    <br>
-    Proverb: <form:textarea path="proverb"/>
-    <form:errors path="proverb"/>
-    <br>
-    proverbDetail: <form:textarea path="proverbDetail"/>
-    <form:errors path="proverbDetail"/>
-    <br>
-    <input type="submit" value="Submit">
+   <div class="container">
+       <div class="row">
+           <form:form action="saveProverb" modelAttribute="theproverb" method="POST">
+               Author: <form:input path="author"/>
 
-</form:form>
+               <br>
+               Proverb: <form:textarea path="proverb"/>
+
+               <br>
+               proverbDetail: <form:textarea path="proverbDetail"/>
+
+               <br>
+               <input type="submit" value="Submit">
+
+           </form:form>
+
+       </div>
+
+   </div>
 
 </body>
 </html>

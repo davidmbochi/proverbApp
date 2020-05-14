@@ -12,6 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="${pageContext.requect.contextPath}/showProverbForm">ADD A PROVERB</a>
+<a href="${pageContext.request.contextPath}/showProverbForm">ADD A PROVERB</a>
 </body>
 </html>

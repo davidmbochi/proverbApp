@@ -1,8 +1,6 @@
 package com.spring.proverbApp.config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-import com.spring.proverbApp.Dao.proverbAppDao;
-import com.spring.proverbApp.service.proverbAppService;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +13,8 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.sql.DataSource;
@@ -26,7 +26,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @ComponentScan(basePackages = "com.spring.proverbApp")
 @PropertySource(value = "classpath:persistence-postgresql.properties")
-public class proverbAppConfig {
+public class proverbAppConfig implements WebMvcConfigurer {
 
     @Autowired
     private Environment environment;
@@ -43,7 +43,7 @@ public class proverbAppConfig {
     public DataSource proverbAppDataSource(){
         ComboPooledDataSource comboPooledDataSource= new ComboPooledDataSource();
         try {
-            comboPooledDataSource.setDriverClass(environment.getProperty("jdbc.driver"));
+            comboPooledDataSource.setDriverClass("org.postgresql.Driver");
         } catch (PropertyVetoException e) {
             e.printStackTrace();
         }
@@ -61,7 +61,9 @@ public class proverbAppConfig {
     }
 
     private int getIntProperty(String propName){
-        int intPropVal= Integer.parseInt((propName));
+        String propVal = environment.getProperty(propName);
+
+        int intPropVal = Integer.parseInt(propVal);
 
         return intPropVal;
     }
@@ -94,4 +96,9 @@ public class proverbAppConfig {
         return hibernateTransactionManager;
     }
 
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**")
+                .addResourceLocations("/resources/");
+    }
 }

@@ -15,18 +15,15 @@ public class Proverbs {
     @Column(name = "id")
     private int id;
 
-    @NotNull(message = "is required")
-    @Size(min = 1)
+
     @Column(name = "proverb")
     private String proverb;
 
-    @NotNull(message = "is required")
-    @Size(min = 1)
+
     @Column(name = "author")
     private String author;
 
-    @NotNull(message = "is required")
-    @Size(min = 1)
+
     @Column(name = "proverbdetail")
     private String proverbDetail;
 
