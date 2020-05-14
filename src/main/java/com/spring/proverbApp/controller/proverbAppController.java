@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @Controller
 public class proverbAppController {
 
@@ -34,5 +36,13 @@ public class proverbAppController {
         proverbAppService.saveProverb(proverbs);
 
         return "redirect:/showProverbForm";
+    }
+    @GetMapping("/list")
+    public String listProverbs(Model model){
+        List<Proverbs> theProverbs= proverbAppService.getProverbs();
+
+        model.addAttribute("customers",theProverbs);
+
+        return "listProverbs";
     }
 }

@@ -6,8 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
-
 <html>
 <head>
     <title>Title</title>
@@ -16,29 +14,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/proverbApp.css">
 </head>
 <body>
    <div class="container">
        <div class="row">
-           <form:form action="saveProverb" modelAttribute="theproverb" method="POST">
-               Author: <form:input path="author"/>
 
-               <br>
-               Proverb: <form:textarea path="proverb"/>
+           <div class="col-md-2">
 
-               <br>
-               proverbDetail: <form:textarea path="proverbDetail"/>
+           </div>
+           <div class="col-md-8">
+               <p>POST A POPULAR PROVERB THAT YOU KNOW</p>
+               <form:form action="saveProverb" modelAttribute="theproverb" method="POST" class="bg-info">
+                   <div class="form-group">
+                       <label>Author:</label><br>
+                       <form:input path="author" class="form-control"/>
 
-               <br>
-               <input type="submit" value="Submit">
+                   </div>
 
-           </form:form>
+                   <br>
+                   <div class="form-group">
+                       <label>Proverb:</label><br>
+                       <form:textarea path="proverb" class="form-control"/>
+
+                   </div>
+
+
+                   <br>
+                   <div class="form-group">
+                       <label> Proverb meaning:</label><br>
+                       <form:textarea path="proverbDetail" class="form-control"/>
+                   </div>
+
+
+                   <br>
+                   <div class="form-group">
+                       <input class="btn btn-success" type="submit" value="Submit">
+
+                   </div>
+
+
+               </form:form>
+
+           </div>
+           <div class="col-md-2">
+
+           </div>
+
 
        </div>
 
    </div>
-
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

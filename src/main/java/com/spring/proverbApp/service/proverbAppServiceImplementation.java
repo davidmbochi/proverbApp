@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class proverbAppServiceImplementation implements proverbAppService {
     @Autowired
@@ -17,5 +19,10 @@ public class proverbAppServiceImplementation implements proverbAppService {
 
         proverbAppDao.saveProverb(theproverb);
 
+    }
+
+    @Override
+    public List<Proverbs> getProverbs() {
+        return proverbAppDao.getProverbs();
     }
 }
