@@ -19,7 +19,7 @@ public class proverbAppDaoImplementation implements proverbAppDao {
     public void saveProverb(Proverbs theProverb) {
         Session currentSession=sessionFactory.getCurrentSession();
 
-        currentSession.save(theProverb);
+        currentSession.saveOrUpdate(theProverb);
 
     }
 
@@ -32,5 +32,17 @@ public class proverbAppDaoImplementation implements proverbAppDao {
         List<Proverbs> proverbs = theQuery.getResultList();
 
         return proverbs;
+    }
+
+    @Override
+    public Proverbs updateProverb(int theId) {
+        Session currentSession = sessionFactory.getCurrentSession();
+
+        Proverbs proverbs = currentSession.get(Proverbs.class,theId);
+
+        return proverbs;
+
+
+
     }
 }

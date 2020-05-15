@@ -7,4 +7,5 @@ import java.util.List;
 public interface proverbAppService {
     public void saveProverb(Proverbs theproverb);
     public List<Proverbs> getProverbs();
+    public Proverbs updateProverb(int theId);
 }

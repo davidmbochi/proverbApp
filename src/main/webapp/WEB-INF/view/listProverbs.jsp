@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <head>
@@ -33,10 +34,17 @@
                 </thead>
                 <tbody>
                 <c:forEach var="tempProverb" items="${customers}">
+                    <C:url var="updateLink" value="/updateProverb">
+                        <c:param name="proverbId" value="${tempProverb.id}"></c:param>
+
+                    </C:url>
                     <tr>
                         <td>${tempProverb.author}</td>
                         <td>${tempProverb.proverb}</td>
                         <td>${tempProverb.proverbDetail}</td>
+                        <td>
+                            <a href="${updateLink}">Update</a>
+                        </td>
                     </tr>
 
                 </c:forEach>

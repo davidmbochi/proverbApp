@@ -7,28 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58972d93-cc0c-4cef-85ab-38c13cb1ba27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/hello.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homepage.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listProverbs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listProverbs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/service/proverbAppServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/service/proverbAppServiceImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/classes/com/spring/proverbApp/service/proverbAppServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proverbApp/WEB-INF/classes/com/spring/proverbApp/service/proverbAppServiceImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/c3p0-0.9.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/mchange-commons-java-0.2.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-aop-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-beans-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-context-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-core-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-expression-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-jcl-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-jdbc-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-orm-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-tx-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-web-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/lib/spring-webmvc-5.0.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/view/listProverbs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/proverbApp/WEB-INF/view/listProverbs.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="30">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,20 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listProverbs.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+              <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="234">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#13#0" expanded="true" />
@@ -89,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/proverbApp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -98,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
+            <state relative-caret-position="894">
               <caret line="74" column="205" selection-start-line="70" selection-start-column="1" selection-end-line="74" selection-end-column="205" />
             </state>
           </provider>
@@ -107,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="153">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,12 +103,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="245">
+              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#670#671#0" expanded="true" />
                 <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="153">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,15 +156,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/entity/Proverbs.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/hello.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homepage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/proverbApp.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listProverbs.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java" />
       </list>
     </option>
   </component>
@@ -643,18 +629,18 @@
       <workItem from="1589388424549" duration="4859000" />
       <workItem from="1589420451846" duration="13599000" />
       <workItem from="1589466986107" duration="6856000" />
-      <workItem from="1589546390601" duration="2994000" />
+      <workItem from="1589546390601" duration="7505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72977000" />
+    <option name="totallyTimeSpent" value="77488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24597365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24597365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -664,7 +650,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24644549" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29541865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -765,49 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="205" selection-start-line="70" selection-start-column="1" selection-end-line="74" selection-end-column="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="85" lean-forward="true" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -818,30 +765,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/proverbApp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/proverbApp.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="153">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="245">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -849,7 +809,35 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listProverbs.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="894">
+          <caret line="74" column="205" selection-start-line="70" selection-start-column="1" selection-end-line="74" selection-end-column="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/proverbAppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
