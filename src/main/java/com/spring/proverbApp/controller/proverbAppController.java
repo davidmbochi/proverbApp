@@ -20,7 +20,7 @@ public class proverbAppController {
     @Autowired
     private proverbAppService proverbAppService;
 
-    @GetMapping("/")
+    @GetMapping("/proverbForm")
     public String showProverbForm(Model model){
         Proverbs proverbs = new Proverbs();
 
@@ -37,10 +37,10 @@ public class proverbAppController {
 
             proverbAppService.saveProverb(proverbs);
 
-            return "listProverbs";
+            return "redirect:/";
         }
     }
-    @GetMapping("/listProverbs")
+    @GetMapping("/")
     public String listProverbs(Model model){
         List<Proverbs> theProverbs= proverbAppService.getProverbs();
 
@@ -58,6 +58,6 @@ public class proverbAppController {
     public String deleteProverb(@RequestParam("proverbId") int theId){
         proverbAppService.deleteProverb(theId);
 
-        return "redirect:/listProverbs";
+        return "redirect:/";
     }
 }

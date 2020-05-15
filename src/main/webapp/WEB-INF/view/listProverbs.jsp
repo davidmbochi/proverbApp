@@ -20,7 +20,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3" style="text-align: center">
+            <a href="${pageContext.request.contextPath}/proverbForm" class="btn btn-info" id="position">ADD PROVERB</a>
+        </div>
+
+    </div>
     <div class="row">
         <div class="col-md-12">
             <table class="table">
@@ -29,6 +35,9 @@
                         <th>Author</th>
                         <th>proverb</th>
                         <th>proverb meaning</th>
+                        <th>date posted</th>
+                        <th>up Vote</th>
+                        <th>down Vote</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -47,11 +56,18 @@
                         <td>${tempProverb.author}</td>
                         <td>${tempProverb.proverb}</td>
                         <td>${tempProverb.proverbDetail}</td>
+                        <td>${tempProverb.dateCreated}</td>
                         <td>
-                            <a href="${updateLink}">Update</a>
+                            <a class="btn btn-info">${tempProverb.upVote}</a>
                         </td>
                         <td>
-                            <a href="${deleteLink}" onclick="if(!(confirm('Are you sure'))) return false">Delete</a>
+                            <a class="btn btn-info">${tempProverb.downVote}</a>
+                        </td>
+                        <td>
+                            <a href="${updateLink}" class="btn btn-info">Update</a>
+                        </td>
+                        <td>
+                            <a href="${deleteLink}" class="btn btn-danger" onclick="if(!(confirm('Are you sure'))) return false">Delete</a>
                         </td>
                     </tr>
 
@@ -62,11 +78,10 @@
 
             </table>
 
-            <a href="${pageContext.request.contextPath}/">ADD PROVERB</a>
-
         </div>
 
     </div>
+
 
 </div>
 <!-- Optional JavaScript -->
