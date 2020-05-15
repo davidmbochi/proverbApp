@@ -32,4 +32,10 @@ public class proverbAppServiceImplementation implements proverbAppService {
     public Proverbs updateProverb(int theId) {
         return proverbAppDao.updateProverb(theId);
     }
+
+    @Override
+    @Transactional
+    public void deleteProverb(int theId) {
+       proverbAppDao.deleteProverb(theId);
+    }
 }

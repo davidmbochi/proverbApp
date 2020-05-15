@@ -45,4 +45,9 @@ public class proverbAppDaoImplementation implements proverbAppDao {
 
 
     }
+
+    @Override
+    public void deleteProverb(int theId) {
+
+    }
 }

@@ -8,4 +8,5 @@ public interface proverbAppService {
     public void saveProverb(Proverbs theproverb);
     public List<Proverbs> getProverbs();
     public Proverbs updateProverb(int theId);
+    public void deleteProverb(int theId);
 }

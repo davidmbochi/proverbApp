@@ -48,4 +48,10 @@ public class proverbAppController {
         model.addAttribute("theproverb",proverbs);
         return "proverbForm";
     }
+    @GetMapping("/deleteProverb")
+    public String deleteProverb(@RequestParam("proverbId") int theId){
+        proverbAppService.deleteProverb(theId);
+
+        return "redirect:/listProverbs";
+    }
 }
