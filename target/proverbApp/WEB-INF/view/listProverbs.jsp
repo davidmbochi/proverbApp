@@ -18,7 +18,6 @@
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/proverbApp.css">
 </head>
 <body>
 <div class="container">
@@ -30,6 +29,8 @@
                         <th>Author</th>
                         <th>proverb</th>
                         <th>proverb meaning</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,12 +39,19 @@
                         <c:param name="proverbId" value="${tempProverb.id}"></c:param>
 
                     </C:url>
+                    <c:url var="deleteLink" value="/deleteProverb">
+                        <c:param name="proverbId" value="${tempProverb.id}"></c:param>
+
+                    </c:url>
                     <tr>
                         <td>${tempProverb.author}</td>
                         <td>${tempProverb.proverb}</td>
                         <td>${tempProverb.proverbDetail}</td>
                         <td>
                             <a href="${updateLink}">Update</a>
+                        </td>
+                        <td>
+                            <a href="${deleteLink}" onclick="if(!(confirm('Are you sure'))) return false">Delete</a>
                         </td>
                     </tr>
 

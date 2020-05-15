@@ -48,6 +48,13 @@ public class proverbAppDaoImplementation implements proverbAppDao {
 
     @Override
     public void deleteProverb(int theId) {
+        Session currentSession= sessionFactory.getCurrentSession();
+
+        Query theQuery = currentSession.createQuery("delete from Proverbs where id=:proverbId");
+
+        theQuery.setParameter("proverbId",theId);
+
+        theQuery.executeUpdate();
 
     }
 }

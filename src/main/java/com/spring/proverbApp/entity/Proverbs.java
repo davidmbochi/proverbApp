@@ -1,5 +1,6 @@
 package com.spring.proverbApp.entity;
 
+import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -13,15 +14,15 @@ public class Proverbs {
     @Column(name = "id")
     private int id;
 
-
+    @NotNull(message = "is required")
     @Column(name = "proverb")
     private String proverb;
 
-
+    @NotNull(message = "is required")
     @Column(name = "author")
     private String author;
 
-
+    @NotNull(message = "is required")
     @Column(name = "proverbdetail")
     private String proverbDetail;
 

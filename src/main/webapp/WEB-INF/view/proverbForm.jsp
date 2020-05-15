@@ -31,6 +31,7 @@
                    <div class="form-group">
                        <label>Author:</label><br>
                        <form:input path="author" class="form-control"/>
+                       <form:errors path="author"></form:errors>
 
                    </div>
 
@@ -38,6 +39,7 @@
                    <div class="form-group">
                        <label>Proverb:</label><br>
                        <form:textarea path="proverb" class="form-control"/>
+                       <form:errors path="proverb"></form:errors>
 
                    </div>
 
@@ -46,6 +48,7 @@
                    <div class="form-group">
                        <label> Proverb meaning:</label><br>
                        <form:textarea path="proverbDetail" class="form-control"/>
+                       <form:errors path="proverbDetail"></form:errors>
                    </div>
 
 

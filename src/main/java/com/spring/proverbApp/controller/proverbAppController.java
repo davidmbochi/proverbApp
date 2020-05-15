@@ -2,9 +2,11 @@ package com.spring.proverbApp.controller;
 
 import com.spring.proverbApp.entity.Proverbs;
 import com.spring.proverbApp.service.proverbAppService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,11 +30,15 @@ public class proverbAppController {
     }
 
     @PostMapping("/saveProverb")
-    public String saveProverb(@ModelAttribute("theproverb") Proverbs proverbs){
+    public String saveProverb(@Valid @ModelAttribute("theproverb") Proverbs proverbs, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return "proverbForm";
+        }else {
 
-        proverbAppService.saveProverb(proverbs);
+            proverbAppService.saveProverb(proverbs);
 
-        return "listProverbs";
+            return "listProverbs";
+        }
     }
     @GetMapping("/listProverbs")
     public String listProverbs(Model model){
