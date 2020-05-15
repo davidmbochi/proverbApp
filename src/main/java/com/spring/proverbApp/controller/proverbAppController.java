@@ -18,10 +18,6 @@ public class proverbAppController {
     private proverbAppService proverbAppService;
 
     @GetMapping("/")
-    public String showHomePage(){
-        return "homepage";
-    }
-    @GetMapping("/showProverbForm")
     public String showProverbForm(Model model){
         Proverbs proverbs = new Proverbs();
 
@@ -35,7 +31,7 @@ public class proverbAppController {
 
         proverbAppService.saveProverb(proverbs);
 
-        return "redirect:/showProverbForm";
+        return "redirect:/";
     }
     @GetMapping("/listProverbs")
     public String listProverbs(Model model){

@@ -23,8 +23,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <table>
-                <thead>
+            <table class="table">
+                <thead class="thead-dark">
                     <tr>
                         <th>Author</th>
                         <th>proverb</th>
@@ -45,6 +45,8 @@
 
 
             </table>
+
+            <a href="${pageContext.request.contextPath}/">ADD PROVERB</a>
 
         </div>
 
