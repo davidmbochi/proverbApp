@@ -37,7 +37,7 @@ public class proverbAppController {
 
         return "redirect:/showProverbForm";
     }
-    @GetMapping("/list")
+    @GetMapping("/listProverbs")
     public String listProverbs(Model model){
         List<Proverbs> theProverbs= proverbAppService.getProverbs();
 
