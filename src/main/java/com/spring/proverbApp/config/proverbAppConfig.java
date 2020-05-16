@@ -59,6 +59,25 @@ public class proverbAppConfig implements WebMvcConfigurer {
 
         return comboPooledDataSource;
     }
+    @Bean
+    public DataSource securityDataSource(){
+        ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
+        try {
+            comboPooledDataSource.setDriverClass("org.postgresql.Driver");
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        }
+        comboPooledDataSource.setJdbcUrl(environment.getProperty("security.jdbc.url"));
+        comboPooledDataSource.setUser(environment.getProperty("security.jdbc.user"));
+        comboPooledDataSource.setPassword(environment.getProperty("security.jdbc.password"));
+
+        comboPooledDataSource.setInitialPoolSize(getIntProperty("security.connection.pool.initialPoolSize"));
+        comboPooledDataSource.setMinPoolSize(getIntProperty("security.connection.pool.minPoolSize"));
+        comboPooledDataSource.setMaxPoolSize(getIntProperty("security.connection.pool.maxPoolSize"));
+        comboPooledDataSource.setMaxIdleTime(getIntProperty("security.connection.pool.maxIdleTime"));
+
+        return securityDataSource();
+    }
 
     private int getIntProperty(String propName){
         String propVal = environment.getProperty(propName);
