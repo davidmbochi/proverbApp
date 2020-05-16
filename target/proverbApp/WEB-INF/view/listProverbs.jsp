@@ -35,7 +35,6 @@
                         <th>Author</th>
                         <th>proverb</th>
                         <th>proverb meaning</th>
-                        <th>date posted</th>
                         <th>up Vote</th>
                         <th>down Vote</th>
                         <th></th>
@@ -56,7 +55,6 @@
                         <td>${tempProverb.author}</td>
                         <td>${tempProverb.proverb}</td>
                         <td>${tempProverb.proverbDetail}</td>
-                        <td>${tempProverb.dateCreated}</td>
                         <td>
                             <a class="btn btn-info">${tempProverb.upVote}</a>
                         </td>

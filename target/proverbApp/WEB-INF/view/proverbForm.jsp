@@ -61,9 +61,11 @@
 
 
                </form:form>
+               <a href="${pageContext.request.contextPath}/" class="btn btn-primary">VIEW PROVERBS</a>
            </div>
 
            <div class="col-md-2">
+
 
            </div>
 
