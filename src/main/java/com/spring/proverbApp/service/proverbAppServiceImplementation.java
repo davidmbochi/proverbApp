@@ -10,6 +10,7 @@ import java.util.List;
 
 @Service
 public class proverbAppServiceImplementation implements proverbAppService {
+
     @Autowired
     private proverbAppDao proverbAppDao;
 

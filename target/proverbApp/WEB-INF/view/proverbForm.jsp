@@ -29,6 +29,8 @@
            <div class="col-md-8">
                <p>POST A POPULAR PROVERB THAT YOU KNOW</p>
                <form:form action="saveProverb" modelAttribute="theproverb" method="POST" class="bg-info">
+
+                   <form:hidden path="id"></form:hidden>
                    <div class="form-group">
                        <label>Author:</label><br>
                        <form:input path="author" class="form-control"/>

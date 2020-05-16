@@ -1,4 +1,4 @@
-package com.spring.proverbApp.testDB;
+package com.spring.proverbApp.testProverbAPPDB;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
