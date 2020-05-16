@@ -35,7 +35,7 @@ public class proverbAppDaoImplementation implements proverbAppDao {
     }
 
     @Override
-    public Proverbs updateProverb(int theId) {
+    public Proverbs getProverb(int theId) {
         Session currentSession = sessionFactory.getCurrentSession();
 
         Proverbs proverbs = currentSession.get(Proverbs.class,theId);

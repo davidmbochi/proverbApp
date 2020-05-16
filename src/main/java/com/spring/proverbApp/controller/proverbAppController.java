@@ -49,13 +49,13 @@ public class proverbAppController {
     public String listProverbs(Model model){
         List<Proverbs> theProverbs= proverbAppService.getProverbs();
 
-        model.addAttribute("customers",theProverbs);
+        model.addAttribute("theproverbs",theProverbs);
 
         return "listProverbs";
     }
     @GetMapping("/updateProverb")
     public String updateProverb(@RequestParam("proverbId") int theId, Model model){
-        Proverbs proverbs= proverbAppService.updateProverb(theId);
+        Proverbs proverbs= proverbAppService.getProverb(theId);
         model.addAttribute("theproverb",proverbs);
         return "proverbForm";
     }

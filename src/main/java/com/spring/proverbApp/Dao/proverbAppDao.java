@@ -7,6 +7,6 @@ import java.util.List;
 public interface proverbAppDao {
     public  void saveProverb(Proverbs theProverb);
     public List<Proverbs> getProverbs();
-    public Proverbs updateProverb(int theId);
+    public Proverbs getProverb(int theId);
     public void deleteProverb(int theId);
 }

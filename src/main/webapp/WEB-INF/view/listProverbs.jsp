@@ -42,7 +42,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="tempProverb" items="${customers}">
+                <c:forEach var="tempProverb" items="${theproverbs}">
                     <C:url var="updateLink" value="/updateProverb">
                         <c:param name="proverbId" value="${tempProverb.id}"></c:param>
 

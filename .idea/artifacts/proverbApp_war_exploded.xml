@@ -49,6 +49,11 @@
           <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.19" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.16.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.3.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.3.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.3.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:5.3.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:5.3.1.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

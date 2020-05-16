@@ -29,8 +29,8 @@ public class proverbAppServiceImplementation implements proverbAppService {
 
     @Override
     @Transactional
-    public Proverbs updateProverb(int theId) {
-        return proverbAppDao.updateProverb(theId);
+    public Proverbs getProverb(int theId) {
+        return proverbAppDao.getProverb(theId);
     }
 
     @Override
