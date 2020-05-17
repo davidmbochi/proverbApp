@@ -25,7 +25,7 @@ import java.util.Properties;
 @EnableWebMvc
 @EnableTransactionManagement
 @ComponentScan(basePackages = "com.spring.proverbApp")
-@PropertySource(value = "classpath:persistence-postgresql.properties")
+@PropertySource({ "classpath:persistence-postgresql.properties", "classpath:security-persistence-postgresql.properties"})
 public class proverbAppConfig implements WebMvcConfigurer {
 
     @Autowired
@@ -63,7 +63,7 @@ public class proverbAppConfig implements WebMvcConfigurer {
     public DataSource securityDataSource(){
         ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
         try {
-            comboPooledDataSource.setDriverClass("org.postgresql.Driver");
+            comboPooledDataSource.setDriverClass(environment.getProperty("security.jdbc.driver"));
         } catch (PropertyVetoException e) {
             e.printStackTrace();
         }
@@ -76,7 +76,7 @@ public class proverbAppConfig implements WebMvcConfigurer {
         comboPooledDataSource.setMaxPoolSize(getIntProperty("security.connection.pool.maxPoolSize"));
         comboPooledDataSource.setMaxIdleTime(getIntProperty("security.connection.pool.maxIdleTime"));
 
-        return securityDataSource();
+        return comboPooledDataSource;
     }
 
     private int getIntProperty(String propName){
