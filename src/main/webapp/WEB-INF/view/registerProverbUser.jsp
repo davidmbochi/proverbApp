@@ -21,7 +21,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <form:form action="saveProverbUser" modelAttribute="proverbUser" method="POST">
+            <form:form action="${pageContext.request.contextPath}/saveProverbUser" modelAttribute="proverbUser" method="POST">
                 <div class="form-group">
                     <label>username:</label>
                     <form:input path="username" type="password" class="form-control"/>
