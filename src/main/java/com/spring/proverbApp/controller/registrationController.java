@@ -1,6 +1,8 @@
 package com.spring.proverbApp.controller;
 
 import com.spring.proverbApp.entity.ProverbUser;
+import com.spring.proverbApp.service.userService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +17,8 @@ import javax.validation.Valid;
 @Controller
 public class registrationController {
 
-
+    @Autowired
+    private userService userService;
 
     @InitBinder
     public void initBinder(WebDataBinder webDataBinder) {
@@ -37,6 +40,22 @@ public class registrationController {
     public String saveProverbUser(@Valid @ModelAttribute("proverbUser") ProverbUser proverbUser,
                                   BindingResult bindingResult,
                                   Model model) {
+        String userName = proverbUser.getUsername();
+
+        if(bindingResult.hasErrors()){
+            return "registerProverbUser";
+        }
+        ProverbUser existing = userService.findUser(userName);
+
+        if(existing != null){
+            model.addAttribute("proverbUser", new ProverbUser());
+            model.addAttribute("registrationError","username already exists");
+            return "registerProverbUser";
+
+        }else{
+            userService.saveUser(proverbUser);
+            return "userRegistered";
+        }
 
 
     }
