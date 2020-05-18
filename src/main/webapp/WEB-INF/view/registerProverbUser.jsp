@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
@@ -23,32 +24,43 @@
         <div class="col-md-6 offset-md-3">
             <form:form action="${pageContext.request.contextPath}/saveProverbUser" modelAttribute="proverbUser" method="POST" class="form-horizontal">
                 <div class="form-group">
-                    <label>username:</label>
-                    <form:input path="username" type="password" class="form-control"/>
+                    <div class="col-xm-15">
+                        <div>
+                            <c:if test="${registrationError != null}">
+                                <div class="alert alert-danger">
+                                    ${registrationError}
+
+
+                                </div>
+                            </c:if>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <form:input path="username"  class="form-control" placeholder="username"/>
                     <form:errors path="username"/>
 
                 </div>
-                <div class="form-group">
-                    <label>password</label>
-                    <form:input path="password" type="password" class="form-control"/>
+                <div class="input-group">
+                    <form:input path="password" type="password" class="form-control" placeholder="password"/>
                     <form:errors path="password"/>
 
                 </div>
-                <div class="form-group">
-                    <label>first name:</label>
-                    <form:input path="firstName" class="form-control"/>
+                <div class="input-group">
+                    <form:input path="firstName" class="form-control" placeholder="firstName"/>
                     <form:errors path="firstName"/>
 
                 </div>
-                <div class="form-group">
-                    <label>last name:</label>
-                    <form:input path="lastName" class="form-control"/>
+                <div class="input-group">
+                    <form:input path="lastName" class="form-control" placeholder="lastName"/>
                     <form:errors path="lastName"/>
 
                 </div>
-                <div class="form-group">
-                    <label>email:</label>
-                    <form:input path="email" type="email" class="form-control"/>
+                <div class="input-group">
+                    <form:input path="email" type="email" class="form-control" placeholder="email"/>
                     <form:errors path="email"/>
 
                 </div>

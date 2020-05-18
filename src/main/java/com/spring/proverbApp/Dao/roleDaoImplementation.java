@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 public class roleDaoImplementation implements roleDao {
 
     @Autowired
-    @Qualifier("localSessionFactoryBeanSecurity")
+    @Qualifier("forSecurity")
     SessionFactory sessionFactory;
 
     @Override

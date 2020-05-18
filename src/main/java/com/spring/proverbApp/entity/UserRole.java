@@ -3,7 +3,7 @@ package com.spring.proverbApp.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "roles")
+@Table(name = "role")
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

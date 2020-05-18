@@ -12,9 +12,11 @@ import org.springframework.core.env.Environment;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
@@ -28,6 +30,15 @@ import java.util.Properties;
 public class ProverbAppConfigSecurityDataSource implements WebMvcConfigurer {
     @Autowired
     private Environment environment;
+
+
+    @Bean
+    public ViewResolver viewResolver(){
+        InternalResourceViewResolver viewResolver= new InternalResourceViewResolver();
+        viewResolver.setPrefix("/WEB-INF/view/");
+        viewResolver.setSuffix(".jsp");
+        return viewResolver;
+    }
 
     @Bean
     public DataSource securityDataSource(){
@@ -67,8 +78,8 @@ public class ProverbAppConfigSecurityDataSource implements WebMvcConfigurer {
         return properties;
     }
 
-    @Bean
-    public LocalSessionFactoryBean localSessionFactoryBeanSecurity(){
+    @Bean(name = "forSecurity")
+    public LocalSessionFactoryBean localSessionFactoryBean(){
         LocalSessionFactoryBean sessionFactory= new LocalSessionFactoryBean();
         sessionFactory.setDataSource(securityDataSource());
         sessionFactory.setPackagesToScan(environment.getProperty("security.hibernate.packageToScan"));
@@ -79,8 +90,7 @@ public class ProverbAppConfigSecurityDataSource implements WebMvcConfigurer {
 
     @Bean
     @Autowired
-    @Qualifier("localSessionFactoryBeanSecurity")
-    public HibernateTransactionManager transactionManager(SessionFactory sessionFactory){
+    public HibernateTransactionManager transactionManager(@Qualifier("forSecurity") SessionFactory sessionFactory){
         HibernateTransactionManager hibernateTransactionManager= new HibernateTransactionManager();
         hibernateTransactionManager.setSessionFactory(sessionFactory);
         return hibernateTransactionManager;

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 public class userDaoImplementation implements userDao {
 
     @Autowired
-    @Qualifier("localSessionFactoryBeanSecurity")
+    @Qualifier("forSecurity")
     private SessionFactory sessionFactory;
 
     @Override
