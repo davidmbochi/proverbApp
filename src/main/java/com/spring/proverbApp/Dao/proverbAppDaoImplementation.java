@@ -15,7 +15,7 @@ import java.util.List;
 public class proverbAppDaoImplementation implements proverbAppDao {
 
     @Autowired
-    @Qualifier("securityDataSource")
+    @Qualifier("localSessionFactoryBean")
     private SessionFactory sessionFactory;
 
     @Override

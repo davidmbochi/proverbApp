@@ -3,6 +3,7 @@ package com.spring.proverbApp.config;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -59,18 +60,18 @@ public class ProverbAppConfigSecurityDataSource implements WebMvcConfigurer {
     private Properties getHibernateProperties(){
         Properties properties =new Properties();
 
-        properties.setProperty("hibernate.dialect",environment.getProperty("hibernate.dialect"));
+        properties.setProperty("hibernate.dialect",environment.getProperty("security.hibernate.dialect"));
 
-        properties.setProperty("hibernate.show_sql",environment.getProperty("hibernate.show_sql"));
+        properties.setProperty("hibernate.show_sql",environment.getProperty("security.hibernate.show_sql"));
 
         return properties;
     }
 
     @Bean
-    public LocalSessionFactoryBean localSessionFactoryBean(){
+    public LocalSessionFactoryBean localSessionFactoryBeanSecurity(){
         LocalSessionFactoryBean sessionFactory= new LocalSessionFactoryBean();
         sessionFactory.setDataSource(securityDataSource());
-        sessionFactory.setPackagesToScan(environment.getProperty("hibernate.packageToScan"));
+        sessionFactory.setPackagesToScan(environment.getProperty("security.hibernate.packageToScan"));
         sessionFactory.setHibernateProperties(getHibernateProperties());
 
         return sessionFactory;
@@ -78,6 +79,7 @@ public class ProverbAppConfigSecurityDataSource implements WebMvcConfigurer {
 
     @Bean
     @Autowired
+    @Qualifier("localSessionFactoryBeanSecurity")
     public HibernateTransactionManager transactionManager(SessionFactory sessionFactory){
         HibernateTransactionManager hibernateTransactionManager= new HibernateTransactionManager();
         hibernateTransactionManager.setSessionFactory(sessionFactory);

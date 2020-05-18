@@ -1,8 +1,6 @@
 package com.spring.proverbApp.controller;
 
 import com.spring.proverbApp.entity.ProverbUser;
-import com.spring.proverbApp.service.userService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

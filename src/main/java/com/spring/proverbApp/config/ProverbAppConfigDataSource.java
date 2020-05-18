@@ -3,6 +3,7 @@ package com.spring.proverbApp.config;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -90,6 +91,7 @@ public class ProverbAppConfigDataSource implements WebMvcConfigurer {
 
     @Bean
     @Autowired
+    @Qualifier("localSessionFactoryBean")
     public HibernateTransactionManager transactionManager(SessionFactory sessionFactory){
         HibernateTransactionManager hibernateTransactionManager= new HibernateTransactionManager();
         hibernateTransactionManager.setSessionFactory(sessionFactory);

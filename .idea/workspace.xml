@@ -7,30 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58972d93-cc0c-4cef-85ab-38c13cb1ba27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigSecurityDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/loginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/userService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/userServiceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/access-denied.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppConfigDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppConfigDispatcherServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigSecurityDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigSecurityDataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/registrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/registrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/entity/ProverbUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/entity/ProverbUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/proverbAppServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registerProverbUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registerProverbUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userRegistered.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userRegistered.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/config/proverbAppSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/proverbApp/config/proverbAppSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proverbApp/WEB-INF/classes/com/spring/proverbApp/config/proverbAppSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proverbApp/WEB-INF/classes/com/spring/proverbApp/config/proverbAppSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/security-persistence-postgresql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/security-persistence-postgresql.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,20 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/registrationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -80,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigSecurityDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="894">
-              <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+            <state relative-caret-position="1064">
+              <caret line="81" column="47" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,32 +66,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="139">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/entity/ProverbUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#1592#1593#0" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#2980#2981#0" expanded="true" />
-                <element signature="e#3044#3045#0" expanded="true" />
-                <element signature="e#3086#3087#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
-              <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+              <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,10 +103,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-postgresql.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/security-persistence-postgresql.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="272">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#13#0" expanded="true" />
@@ -169,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="-58">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#38#0" expanded="true" />
@@ -211,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/persistence-postgresql.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/proverbForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/testProverbSecurityDB/testPostgreSecurityDB.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/security-persistence-postgresql.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppSecurityInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userRegistered.jsp" />
@@ -225,17 +192,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/entity/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/userService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/registrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/entity/ProverbUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/service/userServiceImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigDataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/security-persistence-postgresql.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/registrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigSecurityDataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigDataSource.java" />
       </list>
     </option>
   </component>
@@ -352,6 +320,18 @@
               <item name="proverbApp" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="proverbAppConfigDispatcherServletInitializer" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="proverbApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proverbApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="proverbApp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="ProverbAppConfigSecurityDataSource" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="proverbApp" type="b2602c69:ProjectViewProjectNode" />
@@ -869,12 +849,12 @@
       <workItem from="1589623649096" duration="10987000" />
       <workItem from="1589643551713" duration="6671000" />
       <workItem from="1589714589522" duration="22905000" />
-      <workItem from="1589792656643" duration="14895000" />
+      <workItem from="1589792656643" duration="16099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147182000" />
+    <option name="totallyTimeSpent" value="148386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -966,20 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-postgresql.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/security-persistence-postgresql.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1228,50 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#0#40#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/registrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/proverbAppSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1284,20 +1206,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigDataSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-postgresql.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/security-persistence-postgresql.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/roleDaoImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/userDaoImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/controller/registrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/Dao/proverbAppDaoImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#40#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigSecurityDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="894">
-          <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+        <state relative-caret-position="1064">
+          <caret line="81" column="47" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/proverbApp/config/ProverbAppConfigDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
