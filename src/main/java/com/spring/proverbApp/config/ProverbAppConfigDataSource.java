@@ -25,8 +25,8 @@ import java.util.Properties;
 @EnableWebMvc
 @EnableTransactionManagement
 @ComponentScan(basePackages = "com.spring.proverbApp")
-@PropertySource({ "classpath:persistence-postgresql.properties", "classpath:security-persistence-postgresql.properties"})
-public class proverbAppConfig implements WebMvcConfigurer {
+@PropertySource( "classpath:persistence-postgresql.properties")
+public class ProverbAppConfigDataSource implements WebMvcConfigurer {
 
     @Autowired
     private Environment environment;
@@ -56,25 +56,6 @@ public class proverbAppConfig implements WebMvcConfigurer {
         comboPooledDataSource.setMaxPoolSize(getIntProperty("connection.pool.maxPoolSize"));
         comboPooledDataSource.setMaxIdleTime(getIntProperty("connection.pool.maxIdleTime"));
 
-
-        return comboPooledDataSource;
-    }
-    @Bean
-    public DataSource securityDataSource(){
-        ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
-        try {
-            comboPooledDataSource.setDriverClass(environment.getProperty("security.jdbc.driver"));
-        } catch (PropertyVetoException e) {
-            e.printStackTrace();
-        }
-        comboPooledDataSource.setJdbcUrl(environment.getProperty("security.jdbc.url"));
-        comboPooledDataSource.setUser(environment.getProperty("security.jdbc.user"));
-        comboPooledDataSource.setPassword(environment.getProperty("security.jdbc.password"));
-
-        comboPooledDataSource.setInitialPoolSize(getIntProperty("security.connection.pool.initialPoolSize"));
-        comboPooledDataSource.setMinPoolSize(getIntProperty("security.connection.pool.minPoolSize"));
-        comboPooledDataSource.setMaxPoolSize(getIntProperty("security.connection.pool.maxPoolSize"));
-        comboPooledDataSource.setMaxIdleTime(getIntProperty("security.connection.pool.maxIdleTime"));
 
         return comboPooledDataSource;
     }

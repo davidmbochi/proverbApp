@@ -39,4 +39,5 @@ public class proverbAppServiceImplementation implements proverbAppService {
     public void deleteProverb(int theId) {
        proverbAppDao.deleteProverb(theId);
     }
+
 }

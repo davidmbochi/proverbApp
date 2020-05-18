@@ -9,4 +9,5 @@ public interface proverbAppDao {
     public List<Proverbs> getProverbs();
     public Proverbs getProverb(int theId);
     public void deleteProverb(int theId);
+
 }

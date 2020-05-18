@@ -10,7 +10,7 @@ public class proverbAppConfigDispatcherServletInitializer extends AbstractAnnota
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{proverbAppConfig.class};
+        return new Class[]{ProverbAppConfigDataSource.class};
     }
 
     @Override

@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: david
   Date: 5/17/2020
-  Time: 6:59 PM
+  Time: 8:43 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -20,8 +20,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <p>Registered successfully</p>
-            <a href="${pageContext.request.contextPath}/showLoginForm">LOGIN</a>
+            <p>ACCESS DENIED</p>
+            <a href="${pageContext.request.contextPath}/">HOME PAGE</a>
 
         </div>
 

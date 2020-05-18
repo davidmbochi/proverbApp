@@ -2,6 +2,7 @@ package com.spring.proverbApp.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Collection;
 
 @Entity
 @Table(name = "users")
@@ -30,6 +31,33 @@ public class ProverbUser {
     @NotNull(message = "required")
     @Column(name = "email")
     private String email;
+
+    @ManyToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JoinTable(name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Collection<UserRole> userRoles;
+
+    public ProverbUser(){
+
+    }
+
+    public ProverbUser(@NotNull(message = "required") String username, @NotNull(message = "required") String password, @NotNull(message = "required") String firstName, @NotNull(message = "required") String lastName, @NotNull(message = "required") String email) {
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    public ProverbUser(@NotNull(message = "required") String username, @NotNull(message = "required") String password, @NotNull(message = "required") String firstName, @NotNull(message = "required") String lastName, @NotNull(message = "required") String email, Collection<UserRole> userRoles) {
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.userRoles = userRoles;
+    }
 
     public int getId() {
         return id;
@@ -77,5 +105,13 @@ public class ProverbUser {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Collection<UserRole> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(Collection<UserRole> userRoles) {
+        this.userRoles = userRoles;
     }
 }
