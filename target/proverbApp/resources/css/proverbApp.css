@@ -1,11 +1,9 @@
 
 body{
-    background-color: darkcyan;
-    text-align: center;
+    background-color: wheat;
+
 }
 form{
     margin-top: 10px;
-}
-#myid{
-    margin-top: 250px;
+    border-radius: 10px;
 }

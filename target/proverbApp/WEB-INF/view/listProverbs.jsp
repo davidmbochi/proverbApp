@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
 <head>
@@ -18,13 +19,21 @@
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/proverbApp.css">
 </head>
-<body>
-<div class="container-fluid">
+<body style="background-color: wheat">
+<div class="container">
     <div class="row">
-        <div class="col-md-6 offset-md-3" style="text-align: center">
-            <a href="${pageContext.request.contextPath}/proverbForm" class="btn btn-info" id="position">ADD PROVERB</a>
+        <div class="col-md-6">
+            <a href="${pageContext.request.contextPath}/proverbForm" class="btn btn-success" style="margin-top: 10px">ADD PROVERB</a>
         </div>
+        <div class="col-md-6" >
+            <form:form action="${pageContext.request.contextPath}/logout" method="post">
+                <button type="submit" class="btn btn-success">LOGOUT</button>
+
+            </form:form>
+        </div>
+     </div>
 
     </div>
     <div class="row">

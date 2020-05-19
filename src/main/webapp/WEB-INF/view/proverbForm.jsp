@@ -22,42 +22,35 @@
 <body>
    <div class="container">
        <div class="row">
-
-           <div class="col-md-2">
-
-           </div>
-           <div class="col-md-8">
+           <div class="col-md-6 offset-md-3">
                <p>POST A POPULAR PROVERB THAT YOU KNOW</p>
                <form:form action="saveProverb" modelAttribute="theproverb" method="POST" class="bg-info">
 
                    <form:hidden path="id"></form:hidden>
-                   <div class="form-group">
-                       <label>Author:</label><br>
-                       <form:input path="author" class="form-control"/>
+                   <div class="form-group" style="margin-bottom: 25px">
+                       <form:input path="author" class="form-control" placeholder="author"/>
                        <form:errors path="author"></form:errors>
 
                    </div>
 
                    <br>
-                   <div class="form-group">
-                       <label>Proverb:</label><br>
-                       <form:textarea path="proverb" class="form-control"/>
+                   <div class="form-group" style="margin-bottom: 25px">
+                       <form:textarea path="proverb" class="form-control" placeholder="proverb"/>
                        <form:errors path="proverb"></form:errors>
 
                    </div>
 
 
                    <br>
-                   <div class="form-group">
-                       <label> Proverb meaning:</label><br>
-                       <form:textarea path="proverbDetail" class="form-control"/>
+                   <div class="form-group" style="margin-bottom: 25px">
+                       <form:textarea path="proverbDetail" class="form-control" placeholder="proverb meaning"/>
                        <form:errors path="proverbDetail"></form:errors>
                    </div>
 
 
                    <br>
-                   <div class="form-group">
-                       <input class="btn btn-success" type="submit" value="Submit">
+                   <div class="form-group" style="margin-top: 10px; text-align: center">
+                       <button type="submit" class="btn btn-success">SUBMIT</button>
 
                    </div>
 
@@ -66,10 +59,6 @@
                <a href="${pageContext.request.contextPath}/" class="btn btn-primary">VIEW PROVERBS</a>
            </div>
 
-           <div class="col-md-2">
-
-
-           </div>
 
 
        </div>

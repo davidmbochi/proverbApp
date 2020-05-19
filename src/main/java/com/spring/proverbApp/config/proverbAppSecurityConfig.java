@@ -27,6 +27,7 @@ public class proverbAppSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
+                .antMatchers("/").hasAnyRole("EMPLOYEE","MANAGER","ADMIN")
                 .antMatchers("/saveProverb").hasAnyRole("EMPLOYEE","MANAGER")
                 .antMatchers("/updateProverb").hasAnyRole("ADMIN","MANAGER")
                 .antMatchers("/deleteProverb").hasRole("ADMIN")

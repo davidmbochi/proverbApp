@@ -17,12 +17,13 @@
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/proverbApp.css">
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <form action="${pageContext.request.contextPath}/authenticateTheUser" class="form-horizontal" method="post">
+            <form action="${pageContext.request.contextPath}/authenticateTheUser" class="form-horizontal bg-info" method="post">
                 <div class="form-group">
                     <div class="col-xm-15">
                         <c:if test="${param.error != null}">
@@ -41,16 +42,16 @@
                     </div>
 
                 </div>
-                <div class="input-group">
+                <div class="input-group" style="margin-bottom: 25px">
                     <input type="text" name="username" class="form-control" placeholder="username">
 
                 </div>
-                <div class="input-group">
+                <div class="input-group" style="margin-bottom: 25px">
                     <input type="password" name="password" class="form-control" placeholder="password">
 
                 </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success">Login</button>
+                <div class="form-group" style="margin-top: 10px; text-align: center">
+                    <button type="submit" class="btn btn-success">LOGIN</button>
 
                 </div>
                 <input type="hidden"
@@ -64,7 +65,7 @@
 
         </div>
         <div class="col-md-6 offset-md-3">
-            <a href="${pageContext.request.contextPath}/showRegisterProverbUser">REGISTER</a>
+            <a href="${pageContext.request.contextPath}/showRegisterProverbUser" class="btn btn-success">REGISTER</a>
         </div>
 
     </div>
