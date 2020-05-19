@@ -14,7 +14,6 @@ import java.util.List;
 public class proverbAppDaoImplementation implements proverbAppDao {
 
     @Autowired
-    @Qualifier("forApplication")
     private SessionFactory sessionFactory;
 
     @Override
